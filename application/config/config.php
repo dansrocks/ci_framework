@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://gentedivertida.com/';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +26,8 @@ $config['base_url']	= '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+// Dejamos esta variable en blanco porque usamos reescritura de urls con modrewrite
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +225,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = '4s7Kx4cmh0VEIq7TuYVP49BoDV94e260';
 
 /*
 |--------------------------------------------------------------------------
@@ -244,15 +245,15 @@ $config['encryption_key'] = '';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'ci_session';
+$config['sess_cookie_name']		= 'gentedivertida.com';
 $config['sess_expiration']		= 7200;
-$config['sess_expire_on_close']	= FALSE;
-$config['sess_encrypt_cookie']	= FALSE;
-$config['sess_use_database']	= FALSE;
-$config['sess_table_name']		= 'ci_sessions';
-$config['sess_match_ip']		= FALSE;
-$config['sess_match_useragent']	= TRUE;
-$config['sess_time_to_update']	= 300;
+$config['sess_expire_on_close']	= false;
+$config['sess_encrypt_cookie']	= true;
+$config['sess_use_database']	= true;
+$config['sess_table_name']		= 'sessions';
+$config['sess_match_ip']		= false;
+$config['sess_match_useragent']	= true;
+$config['sess_time_to_update']	= 600;
 
 /*
 |--------------------------------------------------------------------------
@@ -266,7 +267,7 @@ $config['sess_time_to_update']	= 300;
 |
 */
 $config['cookie_prefix']	= "";
-$config['cookie_domain']	= "";
+$config['cookie_domain']	= ".gentedivertida.com";
 $config['cookie_path']		= "/";
 $config['cookie_secure']	= FALSE;
 
@@ -315,7 +316,7 @@ $config['csrf_expire'] = 7200;
 | by the output class.  Do not 'echo' any values with compression enabled.
 |
 */
-$config['compress_output'] = FALSE;
+$config['compress_output'] = false;
 
 /*
 |--------------------------------------------------------------------------
@@ -341,7 +342,7 @@ $config['time_reference'] = 'local';
 | in your view files.  Options are TRUE or FALSE (boolean)
 |
 */
-$config['rewrite_short_tags'] = FALSE;
+$config['rewrite_short_tags'] = false;
 
 
 /*
