@@ -70,7 +70,7 @@ $config['url_suffix'] = '';
 | than english.
 |
 */
-$config['language']	= 'english';
+$config['language']	= 'spanish';
 
 /*
 |--------------------------------------------------------------------------
@@ -245,7 +245,7 @@ $config['encryption_key'] = '4s7Kx4cmh0VEIq7TuYVP49BoDV94e260';
 | 'sess_time_to_update'		= how many seconds between CI refreshing Session Information
 |
 */
-$config['sess_cookie_name']		= 'gentedivertida.com';
+$config['sess_cookie_name']		= 'gentedivertida';
 $config['sess_expiration']		= 7200;
 $config['sess_expire_on_close']	= false;
 $config['sess_encrypt_cookie']	= true;
@@ -269,7 +269,7 @@ $config['sess_time_to_update']	= 600;
 $config['cookie_prefix']	= "";
 $config['cookie_domain']	= ".gentedivertida.com";
 $config['cookie_path']		= "/";
-$config['cookie_secure']	= FALSE;
+$config['cookie_secure']	= false;
 
 /*
 |--------------------------------------------------------------------------
@@ -280,7 +280,7 @@ $config['cookie_secure']	= FALSE;
 | COOKIE data is encountered
 |
 */
-$config['global_xss_filtering'] = FALSE;
+$config['global_xss_filtering'] = true;
 
 /*
 |--------------------------------------------------------------------------
